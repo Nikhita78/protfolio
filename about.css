@@ -1,0 +1,112 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main portfolio title */
+body > h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #c2185b;
+    letter-spacing: 1px;
+}
+/* Logo link */
+
+
+/* Header & Navigation */
+header {
+    background: #c2185b;
+    padding: 15px 0;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+nav ul { 
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffd1e8;
+}
+
+/* Main section */
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+/* Sub container */
+.sub1 {
+    max-width: 900px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Content boxes */
+.box1,
+.box2 {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Box headings */
+.box1 h1,
+.box2 h1 {
+    margin-bottom: 15px;
+    color: #1abc9c;
+    font-size: 22px;
+}
+
+/* Paragraph text */
+.box1 p,
+.box2 p {
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sub1 {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
